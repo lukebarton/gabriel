@@ -1,0 +1,43 @@
+{
+  "name": "gabriel-frontend",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "typings install",
+    "prepublish": "webpack",
+    "dev": "webpack --watch",
+    "test": "mocha --require ts-node/register src/**/*.spec.ts",
+    "test-watch": "mocha --require ts-node/register src/**/*.spec.ts --watch",
+    "clean": "rm -rf dist/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "deep-freeze": "0.0.1",
+    "es6-shim": "^0.35.0",
+    "html-webpack-plugin": "^2.10.0",
+    "istanbul": "^0.4.2",
+    "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sinon": "^1.0.4",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.4.5",
+    "phantomjs-prebuilt": "^2.1.6",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.4.1",
+    "react-router": "^2.0.1",
+    "redux": "^3.3.1",
+    "sinon": "^1.17.3",
+    "ts-loader": "^0.8.1",
+    "ts-node": "^0.7.0",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9",
+    "underscore": "^1.8.3",
+    "webpack": "^1.12.14"
+  }
+}
