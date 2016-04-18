@@ -2,7 +2,6 @@
 
 import * as _ from 'underscore'
 import { connect } from 'react-redux'
-import { setSearchQuery } from '../actions/search'
 import PropertyList from '../components/PropertyList'
 
 const mapStateToProps = (state, ownProps) => {

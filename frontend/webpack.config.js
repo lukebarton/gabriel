@@ -15,14 +15,17 @@ module.exports = {
   },
   resolve: {
     root: __dirname,
-    extensions: [ '', '.ts', '.tsx', '.js' ]
+    extensions: ['', '.ts', '.tsx', '.js']
   },
   module: {
     loaders: [
       {
         test: /\.tsx?$/,
-        loaders: [ 'ts-loader' ],
+        loaders: ['ts-loader'],
         exclude: /node_modules/
+      },
+      { test: /\.css$/, 
+        loader: "style-loader!css-loader" 
       }
     ]
   },

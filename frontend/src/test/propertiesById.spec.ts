@@ -3,17 +3,17 @@
 import * as Chai from 'chai'
 const expect = Chai.expect
 
-import { reducer } from '../state/propertiesById'
+import { PropertiesByIdStateReducer } from '../state/propertiesById'
 
 describe('propertiesById reducer', () => {
   it('should return the initial state', function () {
-    const initialState = reducer(undefined, {});
+    const initialState = PropertiesByIdStateReducer(undefined, {});
 
     expect(initialState).to.be.empty
   })
   it('returns state with empty action', function () {
-    const oldState = reducer(undefined, {})
-    const newState = reducer(oldState, {})
+    const oldState = PropertiesByIdStateReducer(undefined, {})
+    const newState = PropertiesByIdStateReducer(oldState, {})
 
     expect(newState).to.equal(oldState)
   })

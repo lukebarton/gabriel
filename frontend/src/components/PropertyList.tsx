@@ -1,6 +1,7 @@
 /// <reference path="../main.d.ts" />
 
 import * as React from 'react'
+import { Link } from 'react-router'
 import Property from '../model/Property'
 
 export interface PropertyListProps {
@@ -15,7 +16,7 @@ class PropertyList extends React.Component<PropertyListProps, any> {
       <ol className="property-list">
         {properties.map(property =>
           <li key={ property.id }>
-            <a href="#">{ property.name }</a>
+            <Link to={`/property/${property.id}`}>{ property.name }</Link>
             { property.id }
           </li>
           )}

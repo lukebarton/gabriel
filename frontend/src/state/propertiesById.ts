@@ -2,9 +2,11 @@
 
 import Property from '../model/Property'
 
-const initialState : { [id: number] : Property } = {}
+export class PropertiesByIdState {
+  [id: number] : Property
+}
 
-export const reducer = (state = initialState, action) => {
+export const PropertiesByIdStateReducer = function (state : PropertiesByIdState = new PropertiesByIdState, action) {
   switch (action.type) {
     default:
       return state
